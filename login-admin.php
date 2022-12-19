@@ -7,7 +7,7 @@ error_reporting(0);
 session_start();
  
 if (isset($_SESSION['username'])) {
-    header("Location: berhasil_login.php");
+    header("Location: berhasil-login-admin.php");
 }
  
 if (isset($_POST['submit'])) {
@@ -19,7 +19,7 @@ if (isset($_POST['submit'])) {
     if ($result->num_rows > 0) {
         $row = mysqli_fetch_assoc($result);
         $_SESSION['username'] = $row['username'];
-        header("Location: berhasil_login.php");
+        header("Location: berhasil-login-admin.php");
     } else {
         echo "<script>alert('Email atau password Anda salah. Silahkan coba lagi!')</script>";
     }
@@ -57,7 +57,7 @@ if (isset($_POST['submit'])) {
             <div class="input-group">
                 <button name="submit" class="btn">Login</button><a href="dashboard-admin.php"></a></p>
             </div>
-            <p class="login-register-text">Anda belum punya akun? <a href="register.php">Register</a></p>
+            <p class="login-register-text">Anda belum punya akun? <a href="register-admin.php">Register</a></p>
         </form>
     </div>
 </body>

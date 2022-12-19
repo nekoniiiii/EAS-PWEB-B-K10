@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 16 Des 2022 pada 14.56
+-- Waktu pembuatan: 19 Des 2022 pada 16.58
 -- Versi server: 10.4.27-MariaDB
 -- Versi PHP: 8.0.25
 
@@ -31,16 +31,18 @@ CREATE TABLE `users` (
   `id` int(5) NOT NULL,
   `username` varchar(20) NOT NULL,
   `email` varchar(50) NOT NULL,
-  `password` varchar(50) NOT NULL
+  `password` varchar(50) NOT NULL,
+  `foto_ktp` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data untuk tabel `users`
 --
 
-INSERT INTO `users` (`id`, `username`, `email`, `password`) VALUES
-(1, 'neisa14', 'neisahibatillah@gmail.com', 'abc'),
-(2, 'abc', 'abc@gmail.com', '202cb962ac59075b964b07152d234b70');
+INSERT INTO `users` (`id`, `username`, `email`, `password`, `foto_ktp`) VALUES
+(1, 'neisa14', 'neisahibatillah@gmail.com', 'abc', NULL),
+(2, 'abc', 'abc@gmail.com', '202cb962ac59075b964b07152d234b70', NULL),
+(4, 'asd', 'asd@gmail.com', '202cb962ac59075b964b07152d234b70', '50cebfe4734e7d0367f7edc05b8a5bb0.png');
 
 --
 -- Indexes for dumped tables
@@ -60,7 +62,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT untuk tabel `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
