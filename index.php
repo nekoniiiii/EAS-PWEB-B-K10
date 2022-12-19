@@ -1,63 +1,32 @@
-<?php 
- 
-include 'config.php';
- 
-error_reporting(0);
- 
-session_start();
- 
-if (isset($_SESSION['username'])) {
-    header("Location: berhasil_login.php");
-}
- 
-if (isset($_POST['submit'])) {
-    $email = $_POST['email'];
-    $password = md5($_POST['password']);
- 
-    $sql = "SELECT * FROM users WHERE email='$email' AND password='$password'";
-    $result = mysqli_query($conn, $sql);
-    if ($result->num_rows > 0) {
-        $row = mysqli_fetch_assoc($result);
-        $_SESSION['username'] = $row['username'];
-        header("Location: berhasil_login.php");
-    } else {
-        echo "<script>alert('Email atau password Anda salah. Silahkan coba lagi!')</script>";
-    }
-}
- 
-?>
- 
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
- 
-    <link rel="stylesheet" type="text/css" href="style.css">
- 
-    <title>Login</title>
+    <title>Seleksi Kementrian Kelautan dan Perikanan</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <div class="alert alert-warning" role="alert">
-        <?php echo $_SESSION['error']?>
-    </div>
- 
-    <div class="container">
-        <form action="" method="POST" class="login-email">
-            <p class="login-text" style="font-size: 2rem; font-weight: 800;">Login</p>
-            <div class="input-group">
-                <input type="email" placeholder="Email" name="email" value="<?php echo $email; ?>" required>
+    <div class=" formContainer" style="margin-top: auto; margin-bottom: auto;">
+	<p align="center">
+    <img src="images/logo-kkp.png" width="150">
+    </p>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;800;900&family=Roboto:wght@100&family=Secular+One&display=swap" rel="stylesheet">
+            <h1> HAI!</h1>
+			<h3> Selamat Datang di Website Kementrian Kelautan dan Perikanan</h3>
+            <p>Kementrian Kelautan dan Perikanan sedang membutuhkan pegawai baru untuk menjalankan tugas di wilayah Provinsi Jawa Timur.</p>
+            <br><br>
+
+            <div class="d-flex justify-content-center">
+                <a href="login-user.php"><button class="mr-3 btn btn-primary"> Peserta </button></a>
+                <a href="login-admin.php"><button class="btn btn-primary"> Admin</button></a>
             </div>
-            <div class="input-group">
-                <input type="password" placeholder="Password" name="password" value="<?php echo $_POST['password']; ?>" required>
-            </div>
-            <div class="input-group">
-                <button name="submit" class="btn">Login</button>
-            </div>
-            <p class="login-register-text">Anda belum punya akun? <a href="register.php">Register</a></p>
-        </form>
     </div>
 </body>
 </html>
+
