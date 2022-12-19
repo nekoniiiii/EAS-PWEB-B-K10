@@ -20,7 +20,7 @@ body {
 
 h1 {
     text-align: center;
-    font-family: Arial;
+    font-family: poppins;
     font-weight: bolder;
     color: #001952;
     font-family: 'Poppins', sans-serif;
@@ -28,7 +28,7 @@ h1 {
   
   h3 {
     text-align: center;
-    font-family: Arial;
+    font-family: poppins;
     font-weight: bolder;
     color: #001952;
     font-family: 'Poppins', sans-serif;
@@ -36,7 +36,7 @@ h1 {
   
   h2 {
     text-align: center;
-    font-family: Arial;
+    font-family: poppins;
     font-weight: bolder;
     color: #001952;
     
@@ -44,7 +44,7 @@ h1 {
 
   p {
     text-align: center;
-    font-family: Arial;
+    font-family: poppins;
     color: #001952;
     
   }
@@ -117,7 +117,7 @@ h1 {
     background-color: #F9F5EB;
     border-radius: 20px;
     height: auto;
-    padding: 70px;
+    padding: 50px;
     font-family: 'Poppins', sans-serif;
   }
  
