@@ -17,6 +17,37 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+h1 {
+    text-align: center;
+    font-family: Arial;
+    font-weight: bolder;
+    color: #001952;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  h3 {
+    text-align: center;
+    font-family: Arial;
+    font-weight: bolder;
+    color: #001952;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  h2 {
+    text-align: center;
+    font-family: Arial;
+    font-weight: bolder;
+    color: #001952;
+    
+  }
+
+  p {
+    text-align: center;
+    font-family: Arial;
+    color: #001952;
+    
+  }
  
 .container {
     width: 400px;
@@ -78,6 +109,17 @@ body {
     transform: translateY(-5px);
     background: #6c5ce7;
 }
+
+.formContainer {
+    margin-right: auto;
+    margin-left: auto;
+    width: 1000px;
+    background-color: #F9F5EB;
+    border-radius: 20px;
+    height: auto;
+    padding: 70px;
+    font-family: 'Poppins', sans-serif;
+  }
  
 .login-register-text {
     color: #111;
@@ -118,6 +160,8 @@ body {
     transform: translateY(-5px);
     background: #6c5ce7;
 }
+
+
  
 @media (max-width: 430px) {
     .container {

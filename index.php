@@ -8,17 +8,18 @@
     <title>Seleksi Kementrian Kelautan dan Perikanan</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class=" formContainer" style="margin-top: auto; margin-bottom: auto;">
 	<p align="center">
-    <img src="images/logo-kkp.png" width="150">
+    <img src="images/logo-kkp.png" width="180">
     </p>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;800;900&family=Roboto:wght@100&family=Secular+One&display=swap" rel="stylesheet">
-            <h1> HAI!</h1>
-			<h3> Selamat Datang di Website Kementrian Kelautan dan Perikanan</h3>
+            <br>
+			<h3> Selamat Datang! </h3>
+            <h3> Website Kementrian Kelautan dan Perikanan</h3>
             <p>Kementrian Kelautan dan Perikanan sedang membutuhkan pegawai baru untuk menjalankan tugas di wilayah Provinsi Jawa Timur.</p>
             <br><br>
 
