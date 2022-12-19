@@ -7,9 +7,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SMA MAJU JAYA</title>
+    <title>List Admin</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 
     <style>
         .custab {
@@ -27,25 +27,26 @@
 </head>
 
 <body>
-    <br>
-    <h1>List Daftar Calon Siswa</h1>
-
-    <div class=" container" style="margin-top:20px; margin-bottom: 40px">
+    <div class="dashboardContainer" style="margin-top:10px; margin-bottom: 10px">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;800;900&family=Roboto:wght@100&family=Secular+One&display=swap" rel="stylesheet">
-            <p style="text-align: right; margin:15px">
+            <!-- <p style="text-align: right; margin:15px">
                 <a href=" form-daftar.php" class="btn btn-primary btn-xs col-md-3">[+] Tambah Baru</a>
                 <a href= "unduh-pdf.php" class="btn btn-primary btn-xs col-md-3">+ Unduh PDF</a>
-            </p>
+            </p> -->
+            <h1>List Daftar Calon Pegawai</h1>
+             <br> 
             <div class="col-md-12 col-md-offset-2 custyle">
                 <table class="table table-striped custab">
                     <thead>
                         <tr>
-                            <th>ID</th>
-                            <th>Nama</th>
-                            <th>Alamat</th>
+                            <th>id</th>
+                            <th>NIK</th>
+                            <th>Nama Lengkap</th>
                             <th>Jenis Kelamin</th>
-                            <th>Agama</th>
-                            <th>Sekolah Asal</th>
+                            <th>Tempat Lahir </th>
+                            <th>Tanggal Lahir </th>
+                            <th>Kualifikasi Pendidikan</th>
+                            <th>Formasi Jabatan</th>
                             <th>Foto</th>
                             <th>Tindakan</th>
                         </tr>
@@ -55,28 +56,30 @@
                         <?php
                         include "config.php";
                         
-                    $sql = "Select * From tambah_foto";
-                    $query = mysqli_query($db, $sql);
+                    $sql = "Select * From berkas";
+                    $query = mysqli_query($conn, $sql);
 
                         //$sql = $pdo->prepare("SELECT * FROM tambah_foto");
                         //$sql->execute(); // Eksekusi querynya
 
-                        while ($siswa = mysqli_fetch_array($query)) {
+                        while ($pegawai = mysqli_fetch_array($query)) {
                             echo "<tr>";
 
-                            echo "<td>" . $siswa['id'] . "</td>";
-                            echo "<td>" . $siswa['nama'] . "</td>";
-                            echo "<td>" . $siswa['alamat'] . "</td>";
-                            echo "<td>" . $siswa['jenis_kelamin'] . "</td>";
-                            echo "<td>" . $siswa['agama'] . "</td>";
-                            echo "<td>" . $siswa['sekolah_asal'] . "</td>";
-                            echo "<td><img src='img/".$siswa['foto']."' width='100' height='100'></td>";
+                            echo "<td>" . $pegawai['id_berkas'] . "</td>";
+                            echo "<td>" . $pegawai['nik'] . "</td>";
+                            echo "<td>" . $pegawai['nama'] . "</td>";
+                            echo "<td>" . $pegawai['jenis_kelamin'] . "</td>";
+                            echo "<td>" . $pegawai['tempat_lahir'] . "</td>";
+                            echo "<td>" . $pegawai['tanggal_lahir'] . "</td>";
+                            echo "<td>" . $pegawai['kualifikasi_pendidikan'] . "</td>";
+                            echo "<td>" . $pegawai['formasi_jabatan'] . "</td>";
+                            echo "<td><img src='img/".$pegawai['foto']."' width='100' height='100'></td>";
 
 
-                            echo "<td class='text-center'>";
-                            echo "<a class='btn btn-info btn-xs' href='form-edit.php?id=" . $siswa['id'] . "' ><span class='glyphicon glyphicon-edit'></span>Edit</a> | ";
-                            echo "<a  class='btn btn-danger btn-xs' href='hapus.php?id=" . $siswa['id'] . "'><span class='glyphicon glyphicon-remove'></span>Hapus</a>";
-                            echo "</td>";
+                            // echo "<td class='text-center'>";
+                            // echo "<a class='btn btn-info btn-xs' href='form-edit.php?id=" . $pegawai['id'] . "' ><span class='glyphicon glyphicon-edit'></span>Edit</a> | ";
+                            // echo "<a  class='btn btn-danger btn-xs' href='hapus.php?id=" . $pegawai['id'] . "'><span class='glyphicon glyphicon-remove'></span>Hapus</a>";
+                            // echo "</td>";
 
                             echo "</tr>";
                         }

@@ -21,7 +21,7 @@
 			<h3> Selamat Datang! </h3>
             <h3> Website Kementrian Kelautan dan Perikanan</h3>
             <p>Kementrian Kelautan dan Perikanan sedang membutuhkan pegawai baru untuk menjalankan tugas di wilayah Provinsi Jawa Timur.</p>
-            <br><br>
+            <br>
 
             <div class="d-flex justify-content-center">
                 <a href="login-user.php"><button class="mr-3 btn btn-primary"> Peserta </button></a>
