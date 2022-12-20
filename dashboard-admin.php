@@ -39,7 +39,7 @@
                 <table class="table table-striped custab">
                     <thead>
                         <tr>
-                            <th>id</th>
+                            <th>ID</th>
                             <th>NIK</th>
                             <th>Nama Lengkap</th>
                             <th>Jenis Kelamin</th>
@@ -80,6 +80,14 @@
                             // echo "<a class='btn btn-info btn-xs' href='form-edit.php?id=" . $pegawai['id'] . "' ><span class='glyphicon glyphicon-edit'></span>Edit</a> | ";
                             // echo "<a  class='btn btn-danger btn-xs' href='hapus.php?id=" . $pegawai['id'] . "'><span class='glyphicon glyphicon-remove'></span>Hapus</a>";
                             // echo "</td>";
+                            
+                            // kurang form buat nyatain dia menunggu verif, diterima, atau ditolak
+                            echo "<td class='text-center'>";
+                            echo "<a class='btn btn-success' href='form-edit.php?id=" . $pegawai['id_berkas'] . "' ><span class='glyphicon glyphicon-edit'></span>Terima</a>";
+                            echo "</td>";
+                            echo "<td class='text-center'>";
+                            echo "<a class='btn btn-danger' href='form-hapus.php?id=" . $pegawai['id_berkas'] . "'><span class='glyphicon glyphicon-remove'></span>Tolak</a>";
+                            echo "</td>";
 
                             echo "</tr>";
                         }
