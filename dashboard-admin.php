@@ -73,7 +73,7 @@
                             echo "<td>" . $pegawai['tanggal_lahir'] . "</td>";
                             echo "<td>" . $pegawai['kualifikasi_pendidikan'] . "</td>";
                             echo "<td>" . $pegawai['formasi_jabatan'] . "</td>";
-                            echo "<td><img src='img/".$pegawai['foto']."' width='100' height='100'></td>";
+                            echo "<td><img src='images/".$pegawai['foto']."' width='100' height='100'></td>";
 
 
                             // echo "<td class='text-center'>";
@@ -95,8 +95,10 @@
                     </tbody>
                 </table>
                 <p style="font-weight : bolder">Total : <?php echo mysqli_num_rows($query) ?></p>
+                <a href="berhasil-login-admin.php" button name="kembali" type="submit" class="btn btn-primary" style="margin-top: 20px; margin-left: 540px;">Kembali</a></button>
             </div>
-
+            </div>
+    </div>
             </div>
 </body>
 
