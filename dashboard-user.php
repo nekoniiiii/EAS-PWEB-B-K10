@@ -53,7 +53,7 @@
                 <button name="daftar" type="submit" class="btn btn-primary" style="margin-top: 20px;">Daftar</button>
             </form>
         </div>
-        <a href="index-user.php" button name="daftar" type="submit" class="btn btn-primary" style="margin-top: 20px;">Kembali</a></button>
+        <a href="index-user.php" button name="daftar" type="submit" class="btn btn-primary" style="margin-top: 20px; margin-left: 380px;">Kembali</a></button>
     </div>
 </body>
 </html>

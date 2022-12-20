@@ -11,43 +11,42 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
- <!-- START NAVBAR -->
- <nav class="navbar navbar-expand-lg navbar-light bg-white p-3 shadow" style="width:100%">
-        <div class="container">
-            <a class="navbar-brand" href="h">
-                <img src="images/logo-kkp.png" width="90" height="90" alt="logokkp">
-                <!-- <span class="align-middle">Kementrian Kelautan dan Perikanan</span> -->
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index-user.php">Beranda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="dashboard-user.php">Pendaftaran</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="berkas.php">Berkas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="logout.php">Log Out</a>
-                    </li>
-                </ul>
-            </div>
+    <!-- START NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white p-3 shadow" style="width:100%">
+            
+        <a class="navbar-brand" href="h">
+            <img src="images/logo-kkp.png" width="90" height="90" alt="logokkp">
+            <!-- <span class="align-middle">Kementrian Kelautan dan Perikanan</span> -->
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index-user.php">Beranda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dashboard-user.php">Pendaftaran</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="berkas.php">Berkas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="logout.php">Log Out</a>
+                </li>
+            </ul>
         </div>
     </nav>
     <!-- END NAVBAR -->
 
 <body>
     <div class=" formContainer" style="margin-top: auto; margin-bottom: auto;">
-	<p align="center">
-    <img src="images/data-diri.png" width="700">
-    <h3> Status Pendaftaran : Lolos Verifikasi</h3>
-    <a class="nav-link" href="kartu-peserta.php">Cetak Kartu Peserta</a>
+        <p align="center">
+        <img src="images/data-diri.png" width="700">
+        <h3> Status Pendaftaran : Lolos Verifikasi</h3>
+        <a href="kartu-peserta.php" class="btn btn-info" role="button" style="margin-left: 340px;">Cetak Kartu Peserta</a>
     </div>
 
 </body>
