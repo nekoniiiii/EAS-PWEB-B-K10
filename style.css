@@ -42,6 +42,14 @@ h1 {
     
   }
 
+  h4 {
+    text-align: center;
+    font-family: poppins;
+    font-weight: bolder;
+    color: #10a839;
+    
+  }
+
   p {
     text-align: center;
     font-family: poppins;
@@ -348,6 +356,19 @@ label {
   transition: all 0.2s ease-in-out;
 }
  
+.header .icons a,
+.header .icons div {
+  font-size: 2.5rem;
+  margin-left: 1.5rem;
+  color: #130f40;
+  cursor: pointer;
+}
+
+.header .icons a:hover,
+.header .icons div:hover {
+  color: #e67e22;
+}
+
 @media (max-width: 430px) {
     .container {
         width: 300px;

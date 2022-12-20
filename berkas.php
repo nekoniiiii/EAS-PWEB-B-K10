@@ -45,13 +45,10 @@
 <body>
     <div class=" formContainer" style="margin-top: auto; margin-bottom: auto;">
 	<p align="center">
-    <img src="images/user.png" width="180">
-    </p>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;800;900&family=Roboto:wght@100&family=Secular+One&display=swap" rel="stylesheet">
-            <br>
-			<h3> Segera Daftarkan Dirimu! </h3>
-            <p>Kementrian Kelautan dan Perikanan sedang membutuhkan pegawai baru untuk menjalankan tugas di wilayah Provinsi Jawa Timur.</p>
-            <br>
+    <img src="images/data-diri.png" width="700">
+    <h3> Status Pendaftaran : Lolos Verifikasi</h3>
+    <a class="nav-link" href="kartu-peserta.php">Cetak Kartu Peserta</a>
     </div>
+
 </body>
 </html>
