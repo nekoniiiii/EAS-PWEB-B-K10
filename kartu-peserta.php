@@ -15,6 +15,10 @@
     <div class=" formContainer" style="margin-top: auto; margin-bottom: auto;">
 	<p align="center">
     <img src="images/kartu-peserta.png" width="700">
+    <br>
+    <br>
+    <p>
+    <a href= "unduh-pdf.php" class="btn btn-primary btn-xs col-md-3">Unduh PDF</a>
     </div>
 </body>
 </html>
