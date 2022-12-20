@@ -27,7 +27,7 @@ if (!isset($_SESSION['username'])) {
             <a href="logout.php" class="btn">Logout</a>
             </div>
             <div class="input-group">
-            <a href="dashboard-user.php" class="btn">Dashboard</a>
+            <a href="index-user.php" class="btn">Beranda</a>
             </div>
         </form>
     </div>
