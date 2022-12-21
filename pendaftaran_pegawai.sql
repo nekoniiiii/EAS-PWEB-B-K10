@@ -47,7 +47,7 @@ INSERT INTO `berkas` (`id_berkas`, `nik`, `nama`, `jenis_kelamin`, `tempat_lahir
 (1, '098765432112345', 'Chika Chiki', 'Perempuan', 'Kediri', '2002-01-05', 'S-1 Perikanan', 'Pengamat Utama Teknologi Perikanan', 'cika.jpg'),
 (2, '0987652678140098', 'Ardhito Pramono', 'Laki-laki', 'Surabaya', '1991-12-02', 'S-1 Teknologi Perikanan', 'Pengamat Utama Teknologi Perikanan', 'ardhito.png'),
 (3, '0791379173379319', 'Shawn Robert', 'Laki-laki', 'Denpasar', '1998-07-05', 'S-1 Informatika', 'Data Analyst', 'shwann.jpg'),
-(1, '0482373938320837', 'Jennie Unnie', 'Perempuan', 'Sangata', '1995-10-21', 'S-1 Teknologi Pangan Perikanan', 'Pengamat Utama Hasil Perikanan', 'jennie.jpg');
+(4, '0482373938320837', 'Jennie Unnie', 'Perempuan', 'Sangata', '1995-10-21', 'S-1 Teknologi Pangan Perikanan', 'Pengamat Utama Hasil Perikanan', 'jennie.jpg');
 
 -- --------------------------------------------------------
 
