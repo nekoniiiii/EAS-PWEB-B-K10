@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 20, 2022 at 07:34 PM
--- Server version: 10.4.24-MariaDB
--- PHP Version: 8.1.6
+-- Waktu pembuatan: 21 Des 2022 pada 04.15
+-- Versi server: 10.4.27-MariaDB
+-- Versi PHP: 8.0.25
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `berkas`
+-- Struktur dari tabel `berkas`
 --
 
 CREATE TABLE `berkas` (
@@ -37,10 +37,10 @@ CREATE TABLE `berkas` (
   `kualifikasi_pendidikan` varchar(100) NOT NULL,
   `formasi_jabatan` varchar(100) NOT NULL,
   `foto` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `berkas`
+-- Dumping data untuk tabel `berkas`
 --
 
 INSERT INTO `berkas` (`id_berkas`, `nik`, `nama`, `jenis_kelamin`, `tempat_lahir`, `tanggal_lahir`, `kualifikasi_pendidikan`, `formasi_jabatan`, `foto`) VALUES
@@ -52,7 +52,7 @@ INSERT INTO `berkas` (`id_berkas`, `nik`, `nama`, `jenis_kelamin`, `tempat_lahir
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Struktur dari tabel `users`
 --
 
 CREATE TABLE `users` (
@@ -61,10 +61,10 @@ CREATE TABLE `users` (
   `email` varchar(50) NOT NULL,
   `password` varchar(50) NOT NULL,
   `foto_ktp` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `users`
+-- Dumping data untuk tabel `users`
 --
 
 INSERT INTO `users` (`id`, `username`, `email`, `password`, `foto_ktp`) VALUES
@@ -81,17 +81,29 @@ INSERT INTO `users` (`id`, `username`, `email`, `password`, `foto_ktp`) VALUES
 --
 
 --
--- Indexes for table `users`
+-- Indeks untuk tabel `berkas`
+--
+ALTER TABLE `berkas`
+  ADD PRIMARY KEY (`id_berkas`);
+
+--
+-- Indeks untuk tabel `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `users`
+-- AUTO_INCREMENT untuk tabel `berkas`
+--
+ALTER TABLE `berkas`
+  MODIFY `id_berkas` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT untuk tabel `users`
 --
 ALTER TABLE `users`
   MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
